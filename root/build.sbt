@@ -30,7 +30,7 @@ libraryDependencies ++=Seq(
  "com.typesafe.akka" %% "akka-testkit" % "2.6.10" % Test
 
 )
-)
+).dependsOn(common)
 
 
 lazy val root = project.in(file(".")).aggregate(common,rest) 
